@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>christmas E-shop</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" src="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" src="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" src="assets/images/favicon/favicon-16x16.png">
+    <link rel="icon" src="assets/images/favicon/favicon.ico" type="image/png">
+    <link rel="manifest" src="assets/images/favicon/sitee.webmanifest">
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+
+    <!-- Chrismas Song -->
+    <embed src="https://music.youtube.com/watch?v=sO64wZJLwMU&feature=share" class="background-audio" loop="true" autostart="true" width="0" height="0">
+    
+    <!-- header section starts  -->
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-gifts"></i> gifts </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#shop">shop</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home animate__animated animate__fadeInDown animate__delay-0.5s" id="home">
+
+        <div class="slide active" style="background:url(assets/images/home-bg-1.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span data-aos="fade-right">merry christmas</span>
+                <h3 data-aos="fade-right">upto 60% off</h3>
+                <a href="#" class="btn" data-aos="fade-right">shop now</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background:url(assets/images/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span data-aos="fade-right">ho-ho-ho</span>
+                <h3 data-aos="fade-right">happy holiday</h3>
+                <a href="#" class="btn" data-aos="fade-right">shop now</a>
+            </div>
+        </div>
+
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+    </section>
+    <!-- home section ends -->
+
+    <!-- category section starts  -->
+    <section class="category animate__animated animate__fadeInDown animate__delay-0.5s">
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="assets/images/category-1.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="assets/images/category-2.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="assets/images/category-3.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="assets/images/category-4.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="assets/images/category-5.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="assets/images/category-6.png" data-aos="fade-down" alt="">
+                <h3 data-aos="fade-down">christmas decorations</h3>
+            </a>
+
+        </div>
+
+    </section>
+    <!-- category section ends -->
+
+    <!-- about section starts  -->
+    <section class="about aos-init aos-animate" data-aos="zoom-out" id="about">
+
+        <div class="image">
+            <img src="assets/images/about-img.jfif"  alt="">
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <h3 data-aos="fade-right">christmas sales in on</h3>
+                <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non quas blanditiis minima consectetur hic, molestias recusandae, debitis voluptate saepe voluptas ipsa deleniti ullam illum optio magnam adipisci quo illo?</p>
+                <a href="#" class="btn" data-aos="fade-right">read more</a>
+            </div>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-tree" data-aos="fade-right"></i>
+                    <p data-aos="fade-right">christmas trees</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-cookie" data-aos="fade-right"></i>
+                    <p data-aos="fade-right">Xmas cookies</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-gifts" data-aos="fade-right"></i>
+                    <p data-aos="fade-right">christmas gifts</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about section ends -->
+
+    <!-- shop section starts  -->
+    <section class="shop aos-init aos-animate" data-aos="zoom-out" id="shop">
+
+        <h1 class="heading" data-aos="fade-down">our shop</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-1.png" data-aos="fade-down" alt="">
+                    <div class="icons" >
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content" >
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</span></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-2.png" data-aos="fade-down" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-3.png" data-aos="fade-down" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-4.png" data-aos="fade-down" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-5.png" data-aos="fade-down" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/images/product-6.png" data-aos="fade-down" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-right">christmas decore</h3>
+                    <div class="price" data-aos="fade-right"> $249.99 <span data-aos="fade-right">$289.99</span> </div>
+                    <a href="#" class="btn" data-aos="fade-right">add to cart</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- shop section ends -->
+
+    <!-- banner section starts  -->
+    <section class="banner aos-init aos-animate" data-aos="zoom-out">
+
+        <div class="content">
+            <span data-aos="fade-right">special offer</span>
+            <h3 data-aos="fade-right">upto 50% off</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, numquam.</p>
+            <a href="#" class="btn" data-aos="fade-right">shop now</a>
+        </div>
+
+    </section>
+    <!-- banner section ends -->
+
+    <!-- gallery section starts  -->
+    <section class="gallery aos-init aos-animate" data-aos="zoom-out" id="gallery">
+
+        <h1 class="heading" data-aos="fade-down"> our gallery </h1>
+
+        <div class="box-container" data-aos="fade-down">
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-1.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-2.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-3.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-4.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-5.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-img-6.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-images-4.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-images-5.jfif" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-down">
+                <img src="assets/images/gallery-images-6.jpg" alt="">
+                <div class="content">
+                    <h3 data-aos="fade-right">merry christmas</h3>
+                    <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- contact sections starts  -->
+    <section class="contact aos-init aos-animate" data-aos="zoom-out" id="contact">
+
+        <form  data-aos="fade-down" onsubmit="sendEmail(); reset(); return false;">
+            <h3 data-aos="fade-down">get in touch</h3>
+            <input data-aos="fade-down" type="text" placeholder="full name" class="box">
+            <input data-aos="fade-down" type="email" placeholder="email" class="box">
+            <input data-aos="fade-down" type="number" placeholder="phone" class="box">
+            <textarea data-aos="fade-down" name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+            <button class="btn" data-aos="fade-down" type="submit">Send Message</button>
+        </form>
+
+    </section>
+    <!-- contact section ends -->
+
+    <!-- blogs section starts  -->
+    <section class="blogs aos-init aos-animate" data-aos="zoom-out" id="blogs">
+
+        <h1 class="heading" data-aos="fade-down">our daily blogs</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-right">
+                <div class="image">
+                    <img src="assets/images/blog-img1.jfif" alt="">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3 data-aos="fade-right">23</h3>
+                        <span data-aos="fade-right">Dec</span>
+                    </div>
+                    <a href="#" class="user" data-aos="fade-right"> <i class="fas fa-user" data-aos="fade-right"></i> by admin </a>
+                    <a href="#" class="title" data-aos="fade-right"> blog title goes here... </a>
+                    <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, laborum!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-right"  data-aos-duration="1000">
+                <div class="image">
+                    <img src="assets/images/blog-image3.jfif" alt="">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3 data-aos="fade-right">24</h3>
+                        <span data-aos="fade-right">Dec</span>
+                    </div>
+                    <a href="#" class="user" data-aos="fade-right"> <i class="fas fa-user" data-aos="fade-right"></i> by admin </a>
+                    <a href="#" class="title" data-aos="fade-right"> blog title goes here... </a>
+                    <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, laborum!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-right"  data-aos-duration="1500">
+                <div class="image">
+                    <img src="assets/images/blog-image4.jfif" alt="">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3 data-aos="fade-right">25</h3>
+                        <span data-aos="fade-right">Dec</span>
+                    </div>
+                    <a href="#" class="user" data-aos="fade-right"> <i class="fas fa-user" data-aos="fade-right"></i> by admin </a>
+                    <a href="#" class="title" data-aos="fade-right"> blog title goes here... </a>
+                    <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, laborum!</p>
+                    <a href="#" class="btn" data-aos="fade-right">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- blogs section ends -->
+
+    <!-- services section starts  -->
+    <section class="service aos-init aos-animate" data-aos="zoom-out">
+
+        <div class="box">
+            <img src="assets/images/icon-1.png" data-aos="fade-down" alt="">
+            <h3 data-aos="fade-right">free delivery</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, deserunt?</p>
+        </div>
+
+        <div class="box">
+            <img src="assets/images/icon-2.png" data-aos="fade-down" alt="">
+            <h3 data-aos="fade-right">secure payments</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, deserunt?</p>
+        </div>
+
+        <div class="box">
+            <img src="assets/images/icon-3.png" data-aos="fade-down" alt="">
+            <h3 data-aos="fade-right">24/7 support</h3>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, deserunt?</p>
+        </div>
+
+    </section>
+    <!-- services section ends -->
+
+    <!-- footer section starts  -->
+    <section class="footer animate__animated animate__fadeInUp">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 data-aos="fade-down">quick links</h3>
+                <a class="link" data-aos="fade-right" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" data-aos="fade-right" href="#about"> <i class="fas fa-angle-right"></i> about</a>
+                <a class="link" data-aos="fade-right" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" data-aos="fade-right" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+                <a class="link" data-aos="fade-right" href="#message"> <i class="fas fa-angle-right"></i> message</a>
+                <a class="link" data-aos="fade-right" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+            </div>
+
+            <div class="box" data-aos="fade-right"  data-aos-duration="1000">
+                <h3 data-aos="fade-down">extra links</h3>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-angle-right"></i> my favorite </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-angle-right"></i> my order </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-angle-right"></i> my wishlist </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-angle-right"></i> private policy </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+            </div>
+
+            <div class="box" data-aos="fade-right"  data-aos-duration="1500">
+                <h3 data-aos="fade-down">contact info</h3>
+                <a class="link" data-aos="fade-right" href="#"> 
+                    <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a class="link" data-aos="fade-right" href="mailto:contact@biadedigital.com"> <i class="fas fa-envelope"></i> contact@biadedigital.com </a>
+                <a class="link" data-aos="fade-right" href="#"> <i class="fas fa-map"></i> Earth, Universe </a>
+                <div class="share" data-aos="fade-up">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-right"  data-aos-duration="2000">
+                <h3 data-aos="fade-down">newsletter</h3>
+                <p data-aos="fade-right">subscribe for latest updates</p>
+                <form data-aos="fade-right" onsubmit="sendNewsletter(); reset(); return false;">
+                    <input data-aos="fade-right" type="email" name="" placeholder="enter your email" id="" class="email">
+                    <button class="btn" data-aos="fade-right" type="submit" >Subscribe</button>
+                
+                </form>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by 
+            <span> 
+                <a href="https://biadedigital.com">
+                    Biade Digital
+                </a>
+            </span> | all rights reserved! 
+        </div>
+
+    </section>    <!-- footer section ends -->
+
+    <!-- ======= Back To Top ======= -->
+    <a href="#" class="back-to-top">
+        <img src="assets/images/santa-clause-scrollup-1.png" alt="">
+    </a><!-- End Back To Top -->
+
+    <!-- loader part  -->
+    <div class="loader-container">
+        <img src="assets/images/gif/loading.gif" alt="">
+    </div>
+
+    <!-- SMPT CDN -->
+    <script src="assets/form/smtp.js"></script>
+
+    <!-- Send EMail -->
+    <script src="assets/form/send.js"></script>
+    
+    <!-- custom javascript link  -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- Aos JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+</body>
+</html>
