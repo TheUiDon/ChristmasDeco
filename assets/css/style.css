@@ -11,7 +11,6 @@
   text-transform: capitalize;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
-  overflow-x: hidden;
 }
 
 html {
@@ -33,8 +32,8 @@ html::-webkit-scrollbar-thumb {
   background: #e60000;
 }
 
-.background-audio {
-  display: none;
+body {
+  overflow-x: hidden;
 }
 
 section {
@@ -79,6 +78,7 @@ section {
     transform: translateY(-4rem) scale(0.4);
   }
 }
+
 
 .header {
   position: -webkit-sticky;
@@ -898,6 +898,45 @@ section {
   visibility: visible;
   opacity: 1;
 }
+/* ================================================================= */
+.xmas-audio {
+  position: fixed;
+  visibility: hidden;
+  opacity: 1;
+  left: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #e60000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  justify-content: center!important;
+  display: flex!important;
+  align-items: center!important;
+}
+
+.xmas-audio i {
+  font-size: 20px;
+  color: #222;
+}
+
+.xmas-audio i:hover {
+  font-size: 20px;
+  color: #e60000;
+}
+
+
+.xmas-audio:hover {
+  background: #222;
+  color: #e60000;
+}
+
+.xmas-audio.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* ================================================================= */
 .loader-container{
   position: fixed;
